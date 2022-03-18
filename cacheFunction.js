@@ -11,8 +11,8 @@ function cacheFunction(cb) {
             return cache[argument]
         }
         else{
-            cache[argument] = `Argument ${argument} is called from cache.`
-            return cb(argument)
+            cache[argument] = cb(argument)
+            return cache[argument]
         }
     }
     return returnFunction

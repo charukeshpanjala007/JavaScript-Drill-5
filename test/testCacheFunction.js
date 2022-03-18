@@ -1,6 +1,6 @@
 const problem3 = require("../cacheFunction.js")
 
-const cb = (number) => { return `Argument ${number} is called from function.` }
+const cb = (number) => { return `Argument ${number} is called.` }
 
 console.log("Test case-1")
 let result = problem3(cb)
